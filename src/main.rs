@@ -10,7 +10,7 @@ async fn main() {
     let app = Router::new().route("/", get(handler));
 
     // Define the address and port for the server
-    let addr = SocketAddr::from(([127, 0, 0, 1], 8080));
+    let addr = SocketAddr::from(([0, 0, 0, 0], 8080)); // Change to 0.0.0.0
     println!("Listening on http://{}", addr);
 
     // Start the server
